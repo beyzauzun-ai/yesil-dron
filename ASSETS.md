@@ -20,7 +20,8 @@ Bu belge hukuki görüş değildir ve varlıkların yayımlanabilirliği konusun
 | `assets/audio/bubble_short.wav` | Dolum sesi | "Bubble Short.wav", murraysortz, [Freesound](https://freesound.org/people/murraysortz/sounds/192492/) | Dosya değiştirilmedi | **CC0**; yükleyicinin kaynak sayfadaki beyanı | Kaynak sayfa; `assets/audio/bubble_short_lisans.md` |
 | `assets/ui/yildiz.svg`, `ates.svg`, `fidan.svg`, `saat.svg` | HUD ikonları | Claude Code yazdı | Yok | Lisans beyanı yok; Doğrulanamadı | Oturum kaydı |
 | `assets/ui/damla.svg` | Dolum anındaki damla efekti | Claude Code yazdı | Yok | Lisans beyanı yok; Doğrulanamadı | Oturum kaydı |
-| `icon.svg` | Proje simgesi | Doğrulanamadı; içeriği Godot logosuna benzer | Bilinen değişiklik yok | Doğrulanamadı | Dosya içeriği |
+| `assets/icons/yesil_dron_icon_256.png` | Proje simgesi | **ChatGPT ile üretildi — kullanıcı beyanı; dosyada üretim kaydı yok, özgün üretim komutu doğrulanamadı.** Tasarımı Beyza Uzun onayladı | Değişiklik yapılmadı; köşeleri opak ve siyahtır | **Kod için MIT seçilse bile bu görsel kapsamına girmez.** Dosyaya özel lisans belgesi yok; Doğrulanamadı | Kullanıcı beyanı |
+| `icon.svg` | Artık kullanılmıyor; depoda korunuyor | Godot'un varsayılan proje simgesi (`editor/icons/DefaultProjectIcon.svg`) ile birebir aynı | Değiştirilmedi | Godot basın sayfasına göre logolar CC BY 4.0; MIT kapsamında değil | Godot deposuyla karşılaştırma; https://godotengine.org/press/ |
 | `docs/images/*.jpg` | README görselleri | Godot'ta çalışan oyundan alınan kareler; yukarıdaki varlıkları içerir | JPEG'e çevrildi | İçerdiği varlıklara bağlı | Oturum kaydı |
 | Varsayılan yazı tipi | Arayüz | Godot ile gelir; depoda dosya yok | Yok | Adı ve lisansı Doğrulanamadı | Proje dosyaları |
 
@@ -58,7 +59,9 @@ This document is not legal advice and does not guarantee that the assets may be 
 | Drone sprite, water drop icon | ChatGPT (`gpt-image`), user statement and C2PA record (signature not verified); cleaned up with Claude Code | Not verified |
 | Fill sound | "Bubble Short.wav" by murraysortz, [Freesound](https://freesound.org/people/murraysortz/sounds/192492/) | CC0, as declared by the uploader |
 | SVG icons | Written by Claude Code (session record) | No license statement; not verified |
-| `icon.svg`, default font | Not verified | Not verified |
+| Project icon (`yesil_dron_icon_256.png`) | Generated with ChatGPT (user statement); no generation record in the file, original prompt not verified; design approved by Beyza Uzun | Not verified; not covered by any MIT license for the code |
+| `icon.svg` (no longer used, kept in the repository) | Identical to Godot's default project icon | Godot logos: CC BY 4.0 according to Godot's press page; not covered by any MIT license for the code |
+| Default font | Not verified | Not verified |
 
 According to the user, OpenAI's terms state that rights in output belong to the user to the extent permitted by applicable law. This is not a guarantee regarding third-party rights.
 
