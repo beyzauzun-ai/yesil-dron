@@ -10,6 +10,23 @@ Bu belge hukuki görüş değildir ve varlıkların yayımlanabilirliği konusun
 - **Oturum kaydı:** Claude Code çalışma oturumunun kaydı.
 - **Doğrulanamadı:** Elde kanıt yok.
 
+## Lisans kapsamı
+
+[LICENSE](LICENSE) dosyasındaki MIT Lisansı yalnızca orada listelenen oyun kodları, test kodları, sahneler ve teknik yapılandırma dosyaları için geçerlidir. Aşağıdakiler **MIT kapsamında değildir**:
+
+- ChatGPT ile üretilen görseller: harita v2, dron ve su damlası
+- Özel proje simgesi: `assets/icons/yesil_dron_icon_256.png`
+- HUD SVG dosyaları: `assets/ui/*.svg`
+- Belgeler ve test çıktıları
+- Ekran görüntüleri: `docs/images/*.jpg`
+
+Bunların dışında:
+
+- `assets/audio/bubble_short.wav` kendi **CC0** kaydına tabidir; bu kayıt yükleyicinin beyanına dayanır.
+- Eski `icon.svg` Godot kaynaklıdır (varsayılan proje simgesi) ve MIT kapsamında değildir.
+
+Ayrı bir lisans belirtilmedikçe, MIT kapsamı dışındaki varlıklar için bu depoda açık bir yeniden kullanım izni verilmemektedir. Bu belge, bu varlıkların hak sahipliği konusunda kesinlik iddia etmez.
+
 ## Bu depodaki varlıklar
 
 | Dosya | Kullanım | Kaynak | Değişiklik | Lisans durumu | Dayanak |
@@ -20,7 +37,7 @@ Bu belge hukuki görüş değildir ve varlıkların yayımlanabilirliği konusun
 | `assets/audio/bubble_short.wav` | Dolum sesi | "Bubble Short.wav", murraysortz, [Freesound](https://freesound.org/people/murraysortz/sounds/192492/) | Dosya değiştirilmedi | **CC0**; yükleyicinin kaynak sayfadaki beyanı | Kaynak sayfa; `assets/audio/bubble_short_lisans.md` |
 | `assets/ui/yildiz.svg`, `ates.svg`, `fidan.svg`, `saat.svg` | HUD ikonları | Claude Code yazdı | Yok | Lisans beyanı yok; Doğrulanamadı | Oturum kaydı |
 | `assets/ui/damla.svg` | Dolum anındaki damla efekti | Claude Code yazdı | Yok | Lisans beyanı yok; Doğrulanamadı | Oturum kaydı |
-| `assets/icons/yesil_dron_icon_256.png` | Proje simgesi | **ChatGPT ile üretildi — kullanıcı beyanı; dosyada üretim kaydı yok, özgün üretim komutu doğrulanamadı.** Tasarımı Beyza Uzun onayladı | Değişiklik yapılmadı; köşeleri opak ve siyahtır | **Kod için MIT seçilse bile bu görsel kapsamına girmez.** Dosyaya özel lisans belgesi yok; Doğrulanamadı | Kullanıcı beyanı |
+| `assets/icons/yesil_dron_icon_256.png` | Proje simgesi | **ChatGPT ile üretildi — kullanıcı beyanı; dosyada üretim kaydı yok, özgün üretim komutu doğrulanamadı.** Tasarımı Beyza Uzun onayladı | Değişiklik yapılmadı; köşeleri opak ve siyahtır | **Bu görsel MIT Lisansı kapsamına girmez.** Dosyaya özel lisans belgesi yok; Doğrulanamadı | Kullanıcı beyanı |
 | `icon.svg` | Artık kullanılmıyor; depoda korunuyor | Godot'un varsayılan proje simgesi (`editor/icons/DefaultProjectIcon.svg`) ile birebir aynı | Değiştirilmedi | Godot basın sayfasına göre logolar CC BY 4.0; MIT kapsamında değil | Godot deposuyla karşılaştırma; https://godotengine.org/press/ |
 | `docs/images/*.jpg` | README görselleri | Godot'ta çalışan oyundan alınan kareler; yukarıdaki varlıkları içerir | JPEG'e çevrildi | İçerdiği varlıklara bağlı | Oturum kaydı |
 | Varsayılan yazı tipi | Arayüz | Godot ile gelir; depoda dosya yok | Yok | Adı ve lisansı Doğrulanamadı | Proje dosyaları |
@@ -41,7 +58,7 @@ Bu belge hukuki görüş değildir ve varlıkların yayımlanabilirliği konusun
 
 ## Kod lisansı
 
-Henüz bir lisans belirlenmemiştir. Bir kod lisansı seçildiğinde, bu varlıkları kapsayıp kapsamadığı ayrıca belirtilmelidir.
+Oyun kodları, test kodları, sahneler ve açıkça belirtilen teknik yapılandırma dosyaları [MIT Lisansı](LICENSE) ile lisanslanmıştır. Lisans, yalnızca lisans verenin sahip olduğu hakları kapsar. Kodun büyük bölümü Claude Code ile üretilmiştir; bu üretimlerin hak durumu konusunda kesinlik iddia edilmez.
 
 ## Tarihli belgelerle ilişkisi
 
@@ -59,10 +76,10 @@ This document is not legal advice and does not guarantee that the assets may be 
 | Drone sprite, water drop icon | ChatGPT (`gpt-image`), user statement and C2PA record (signature not verified); cleaned up with Claude Code | Not verified |
 | Fill sound | "Bubble Short.wav" by murraysortz, [Freesound](https://freesound.org/people/murraysortz/sounds/192492/) | CC0, as declared by the uploader |
 | SVG icons | Written by Claude Code (session record) | No license statement; not verified |
-| Project icon (`yesil_dron_icon_256.png`) | Generated with ChatGPT (user statement); no generation record in the file, original prompt not verified; design approved by Beyza Uzun | Not verified; not covered by any MIT license for the code |
-| `icon.svg` (no longer used, kept in the repository) | Identical to Godot's default project icon | Godot logos: CC BY 4.0 according to Godot's press page; not covered by any MIT license for the code |
+| Project icon (`yesil_dron_icon_256.png`) | Generated with ChatGPT (user statement); no generation record in the file, original prompt not verified; design approved by Beyza Uzun | Not verified; not covered by the MIT License |
+| `icon.svg` (no longer used, kept in the repository) | From Godot; identical to Godot's default project icon | Godot logos: CC BY 4.0 according to Godot's press page; not covered by the MIT License |
 | Default font | Not verified | Not verified |
 
 According to the user, OpenAI's terms state that rights in output belong to the user to the extent permitted by applicable law. This is not a guarantee regarding third-party rights.
 
-No code license has been chosen yet.
+Game code, test code, scenes and the listed technical configuration files are licensed under the [MIT License](LICENSE). The following are **not covered** by it: the ChatGPT images (map v2, drone, water drop), the custom project icon, the HUD SVG files, documents, test outputs and screenshots. `bubble_short.wav` is subject to its own CC0 record, as declared by the uploader. This document makes no definitive claim about ownership of these assets.

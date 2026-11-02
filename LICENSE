@@ -1,0 +1,58 @@
+KAPSAM
+
+Aşağıdaki MIT Lisansı YALNIZCA bu depodaki şu dosyalar için geçerlidir:
+
+- Oyun kodları: scenes/ altındaki .gd dosyaları
+- Sahneler: scenes/ altındaki .tscn dosyaları
+- Test kodları: docs/modul8/testler/ ve docs/modul10/testler/ altındaki
+  .gd dosyaları
+- Teknik yapılandırma dosyaları: project.godot, .gitignore, .gitattributes,
+  .editorconfig, docs/images/.gdignore ve bu depoda mevcut olan teknik
+  .gd.uid ve .import dosyaları
+
+Aşağıdakiler bu lisansın KAPSAMINDA DEĞİLDİR: görseller, sesler, SVG dosyaları
+(icon.svg dahil), ekran görüntüleri, README.md, ASSETS.md ve diğer belgeler,
+test çıktıları. Bunların kaynak ve lisans bilgileri için ASSETS.md dosyasına
+bakınız. Bir sahne, .gd.uid veya .import dosyasının bir varlığa başvurması ya
+da bir varlıkla ilişkili olması, o varlığa bu lisansı uygulamaz.
+
+SCOPE
+
+The MIT License below applies ONLY to the following files in this repository:
+
+- Game code: .gd files under scenes/
+- Scenes: .tscn files under scenes/
+- Test code: .gd files under docs/modul8/testler/ and docs/modul10/testler/
+- Technical configuration files: project.godot, .gitignore, .gitattributes,
+  .editorconfig, docs/images/.gdignore and the technical .gd.uid and .import
+  files present in this repository
+
+The following are NOT covered by this license: images, audio, SVG files
+(including icon.svg), screenshots, README.md, ASSETS.md and other documents,
+test outputs. See ASSETS.md for their sources and license information. A scene,
+.gd.uid or .import file referring to or being associated with an asset does not
+apply this license to that asset.
+
+--------------------------------------------------------------------------------
+
+MIT License
+
+Copyright (c) 2026 Beyza Uzun
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

@@ -107,7 +107,9 @@ Ayrıntı: [yapay_zeka_katki_beyani.md](docs/modul10/yapay_zeka_katki_beyani.md)
 
 Varlıkların kaynakları ve doğrulanamayan bilgiler [ASSETS.md](ASSETS.md) dosyasındadır.
 
-**Henüz bir kod lisansı belirlenmemiştir.** Depoda `LICENSE` dosyası yoktur.
+Oyun kodları, test kodları, sahneler ve açıkça belirtilen teknik yapılandırma dosyaları [MIT Lisansı](LICENSE) ile lisanslanmıştır; kapsam `LICENSE` dosyasının başında yazılıdır.
+
+**Görseller, sesler, SVG dosyaları, ekran görüntüleri ve belgeler bu lisansın kapsamında değildir.**
 
 ## Geliştirici
 
@@ -208,7 +210,9 @@ Situations that do not occur in normal play, such as an empty tank, were checked
 
 Asset sources and unverified information are listed in [ASSETS.md](ASSETS.md) (in Turkish, with an English summary).
 
-**No code license has been chosen yet.** This repository has no `LICENSE` file.
+Game code, test code, scenes and the listed technical configuration files are licensed under the [MIT License](LICENSE); the scope is stated at the top of the `LICENSE` file.
+
+**Images, audio, SVG files, screenshots and documents are not covered by this license.**
 
 ## Developer
 
