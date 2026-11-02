@@ -19,7 +19,7 @@
 *.zip
 
 # Test çalıştırmalarının ürettiği görüntüler
-docs/modul8/testler/t_*.png
+docs/modul8/testler/t_*.png*
 
 # İşletim sistemi dosyaları
 Thumbs.db
