@@ -31,7 +31,7 @@ Ayrı bir lisans belirtilmedikçe, MIT kapsamı dışındaki varlıklar için bu
 
 | Dosya | Kullanım | Kaynak | Değişiklik | Lisans durumu | Dayanak |
 |---|---|---|---|---|---|
-| `assets/backgrounds/yesil_dron_orman_haritasi_v2.png` | Oyun arka planı | **ChatGPT ile üretildi — kullanıcı beyanı; özgün üretim komutu doğrulanamadı** | Dosya değiştirilmedi | Dosyaya özel lisans belgesi yok; Doğrulanamadı | Kullanıcı beyanı; dosyada üst veri yok, oturum kaydı doğrulanamadı |
+| `assets/backgrounds/yesil_dron_orman_haritasi_v2.png` | Oyun arka planı | **ChatGPT'nin görsel oluşturma aracıyla hazırlandı — proje sahibinin beyanı.** Ayrıntı aşağıda | Dosya değiştirilmedi | Dosyaya özel lisans belgesi yok; Doğrulanamadı | Proje sahibinin beyanı; dosyada üst veri ve teknik üretim kaydı yok |
 | `assets/sprites/dron_modul8_temiz.png` | Dron | ChatGPT (`gpt-image`) | Claude Code: alfa temizliği | Dosyaya özel lisans belgesi yok; Doğrulanamadı | Kullanıcı beyanı, C2PA kaydı (kaynak dosya), oturum kaydı |
 | `assets/sprites/damla_modul8_temiz.png` | HUD su ikonu | ChatGPT (`gpt-image`) | Claude Code: alfa temizliği, kırpma, 256×256 | Dosyaya özel lisans belgesi yok; Doğrulanamadı | Kullanıcı beyanı, C2PA kaydı (kaynak dosya), oturum kaydı |
 | `assets/audio/bubble_short.wav` | Dolum sesi | "Bubble Short.wav", murraysortz, [Freesound](https://freesound.org/people/murraysortz/sounds/192492/) | Dosya değiştirilmedi | **CC0**; yükleyicinin kaynak sayfadaki beyanı | Kaynak sayfa; `assets/audio/bubble_short_lisans.md` |
@@ -42,11 +42,19 @@ Ayrı bir lisans belirtilmedikçe, MIT kapsamı dışındaki varlıklar için bu
 | `docs/images/*.jpg` | README görselleri | Godot'ta çalışan oyundan alınan kareler; yukarıdaki varlıkları içerir | JPEG'e çevrildi | İçerdiği varlıklara bağlı | Oturum kaydı |
 | Varsayılan yazı tipi | Arayüz | Godot ile gelir; depoda dosya yok | Yok | Adı ve lisansı Doğrulanamadı | Proje dosyaları |
 
+## Harita v2 görselinin kaynağı
+
+Yeşil Dron'un harita v2 görseli, proje geliştirme sürecinde ChatGPT'nin görsel oluşturma aracıyla hazırlanmıştır. Bu bilgi proje sahibinin üretim sürecine ilişkin beyanına dayanmaktadır.
+
+Orijinal üretim komutu ve teknik üretim kayıtları mevcut belgelerde bulunmadığından bağımsız olarak doğrulanamamıştır. Bu durum, haritanın ChatGPT ile üretildiği yönündeki kullanıcı beyanını geçersiz kılmaz.
+
+`docs/modul10/` klasöründeki belgeler önceki inceleme tarihindeki durumu yansıtır. Güncel kaynak açıklaması `ASSETS.md` dosyasındadır.
+
 ## Gerçek üretim komutları
 
 | Görsel | Durum |
 |---|---|
-| Harita v2 | Doğrulanamadı: özgün komut ve oturum kaydı elimizde yok |
+| Harita v2 | Doğrulanamadı: özgün komut ve teknik üretim kayıtları mevcut belgelerde yok |
 | Dron | Doğrulanamadı: elimizde yok |
 | Su damlası | Doğrulanamadı: elimizde yok |
 
@@ -62,7 +70,7 @@ Oyun kodları, test kodları, sahneler ve açıkça belirtilen teknik yapıland�
 
 ## Tarihli belgelerle ilişkisi
 
-`docs/modul10/` altındaki belgeler 10. modül sırasındaki durumu gösterir ve değiştirilmemiştir. `varlik_lisans_kaydi.md` ve `yapay_zeka_katki_beyani.md`, harita v2'nin aracını "Doğrulanamadı" olarak yazar ve bu depoda bulunmayan kaynak görsellerden söz eder. **Güncel varlık kaydı bu dosyadır.** Harita için ChatGPT bilgisi, o belgelerden sonra kullanıcı tarafından bildirilmiştir.
+`docs/modul10/` altındaki belgeler değiştirilmemiştir. `varlik_lisans_kaydi.md` ve `yapay_zeka_katki_beyani.md`, harita v2'nin aracını "Doğrulanamadı" olarak yazar ve bu depoda bulunmayan kaynak görsellerden söz eder. Harita için ChatGPT bilgisi, o belgelerden sonra proje sahibi tarafından bildirilmiştir.
 
 ---
 
@@ -72,7 +80,7 @@ This document is not legal advice and does not guarantee that the assets may be 
 
 | Asset | Source | License status |
 |---|---|---|
-| Map v2 | Generated with ChatGPT (user statement); original prompt not verified | Not verified |
+| Map v2 | Prepared with ChatGPT's image generation tool, according to the project owner's statement. The original prompt and technical generation records are not in the available documents, so this could not be independently verified; this does not invalidate the statement. Documents in `docs/modul10/` reflect the earlier review; this file holds the current source description | Not verified |
 | Drone sprite, water drop icon | ChatGPT (`gpt-image`), user statement and C2PA record (signature not verified); cleaned up with Claude Code | Not verified |
 | Fill sound | "Bubble Short.wav" by murraysortz, [Freesound](https://freesound.org/people/murraysortz/sounds/192492/) | CC0, as declared by the uploader |
 | SVG icons | Written by Claude Code (session record) | No license statement; not verified |
