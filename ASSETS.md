@@ -61,7 +61,7 @@ Orijinal üretim komutu ve teknik üretim kayıtları mevcut belgelerde bulunmad
 ## Yapay zekâ çıktıları ve kullanım koşulları
 
 - **OpenAI:** Kullanıcının bildirdiğine göre OpenAI kullanım koşulları, çıktının haklarının uygulanabilir hukuk sınırları içinde kullanıcıya ait olduğunu belirtir. Bu belgeyi hazırlarken koşullar sayfası doğrudan okunamadı. Bu bilgi, üçüncü taraf hakları için garanti değildir.
-- **Claude Code ile üretilen dosyalar:** Hesaba uygulanan koşullar doğrulanamadı; lisans beyanı yoktur.
+- **Claude Code ile üretilen HUD SVG görselleri (`assets/ui/*.svg`):** Hesaba uygulanan koşullar doğrulanamadı; bu görseller için lisans beyanı yoktur ve MIT kapsamında değildir. Kodların durumu için "Kod lisansı" bölümüne bakınız.
 - Yapay zekâ çıktılarının korunabilirliği, benzerliği veya üçüncü taraf haklarıyla ilişkisi araştırılmamıştır. SVG ikonlarının başka ikonlara benzerliği de kontrol edilmemiştir.
 
 ## Kod lisansı
@@ -89,5 +89,7 @@ This document is not legal advice and does not guarantee that the assets may be 
 | Default font | Not verified | Not verified |
 
 According to the user, OpenAI's terms state that rights in output belong to the user to the extent permitted by applicable law. This is not a guarantee regarding third-party rights.
+
+Claude Code-generated HUD SVG images (`assets/ui/*.svg`): the terms applying to the account could not be verified; these images have no license statement and are not covered by the MIT License. See the license paragraph below for the code.
 
 Game code, test code, scenes and the listed technical configuration files are licensed under the [MIT License](LICENSE). The following are **not covered** by it: the ChatGPT images (map v2, drone, water drop), the custom project icon, the HUD SVG files, documents, test outputs and screenshots. `bubble_short.wav` is subject to its own CC0 record, as declared by the uploader. This document makes no definitive claim about ownership of these assets.

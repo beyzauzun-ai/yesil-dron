@@ -25,3 +25,48 @@ docs/modul8/testler/t_*.png*
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# Ortam ve gizli yapılandırma dosyaları
+.env
+.env.*
+!.env.example
+
+# Özel anahtarlar ve imzalama dosyaları
+*.pem
+*.key
+*.p8
+*.p12
+*.pfx
+*.jks
+*.keystore
+id_rsa
+id_ed25519
+
+# Godot dışa aktarım ayarları
+# Bazı projelerde paylaşılabilir yapılandırma içerebilir; bu projede olası
+# imzalama bilgilerinin korunması önceliklidir.
+export_presets.cfg
+
+# Derleme çıktıları
+*.exe
+*.pck
+*.apk
+*.aab
+*.ipa
+*.dmg
+*.x86_64
+*.x86_32
+*.arm64
+
+# Kişisel editör ayarları
+.vscode/
+
+# Yerel simge hazırlık klasörü
+/simge_hazirlik/
+
+# Test betiklerinin ürettiği geçici görüntü ve ölçümler
+docs/modul8/testler/*.png
+docs/modul8/testler/*.png.import
+docs/modul8/testler/hud_rect_*.txt
+docs/modul10/testler/*.png
+docs/modul10/testler/*.png.import
