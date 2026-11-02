@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://b6le6lfa1u20h"]
+
+[ext_resource type="Texture2D" uid="uid://h17jwhfh585f" path="res://assets/sprites/dron_modul8_temiz.png" id="1_dron"]
+[ext_resource type="Script" uid="uid://bh277sgd4bnr7" path="res://scenes/dron.gd" id="2_dron"]
+
+[node name="Dron" type="Node2D" unique_id=626455051]
+position = Vector2(576, 324)
+script = ExtResource("2_dron")
+
+[node name="Goruntu" type="Sprite2D" parent="." unique_id=1355761175]
+texture_filter = 4
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("1_dron")

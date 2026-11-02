@@ -1,0 +1,75 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.14761 Core Profile Forward-Compatible Context 21.30.44.10 30.0.13044.10001 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Vega 8 Graphics
+
+== T1 Baslangic ve HUD degerleri
+  [OK]   Ana sahne menu  AnaMenu (res://scenes/ana_menu.tscn)
+  [OK]   Odak Basla butonunda  true
+100
+  [OK]   ui_accept ile oyun sahnesi  Oyun
+  [OK]   Su etiketi ve cubuk  Su: 50/100, cubuk 50.0
+  [OK]   Puan  Puan: 100
+  [OK]   Sondurulen, fidan, sure  Söndürülen: 1/3, Fidan: 0/3, Kalan süre: 95 sn
+  [OK]   Dron baslangic konumu  (576.0, 324.0)
+  [OK]   3 sn sonra su ve sure ayni  su 50, Kalan süre: 95 sn
+  [OK]   Sayac, ses ve efekt kapali  sayac durdu true, ses 0, efekt 0
+== T2 Normal su toplama akisi
+100
+  [OK]   Gole girince sayac basladi  kalan 1.57 sn
+  [OK]   Yaklasik 1,5 sn'de su degismedi, ses yok  su 50, ses 0, giristen 1949 ms
+  [OK]   Su su_max degerine cikti (su 50)  su 100, su_max 100, Su: 100/100
+  [OK]   Dolum suresi yaklasik 2 sn  1998 ms
+  [OK]   Ses 1 kez tetiklendi  tetiklenme 1
+  [OK]   Efekt 1 kez goruldu  efekt 1
+  [OK]   Efekt yaklasik 0,8 sn surdu ve kapandi  781 ms
+  [OK]   Ses bir kez bitti  bitis 1
+  [OK]   Puan degismedi  Puan: 100
+100
+  [OK]   Kontrollu su 73: dolmadan once 73  su 73
+  [OK]   Kontrollu su 73: su_max degerine cikti  su 100, 2014 ms
+== T3 Bos depo ve su sinirlari (kontrollu duzen)
+100
+  [OK]   Kontrollu su 0: HUD  su 0, Su: 0/100, cubuk 0.0
+  [OK]   Gol disinda su 0 kendiliginden dolmadi  su 0, ses 0
+  [OK]   Su 0'dan su_max degerine dolum  su 100, 2017 ms
+  [OK]   Dolumda ses 1 kez  tetiklenme 1
+  [GOZLEM] Dron goldeyken su 30 yapildi, 3 sn beklendi: su 30, sayac durdu true, ses 1. Dolum yalnizca giriste basliyor.
+  [OK]   Kontrollu su -5: 0'a sikisti  su 0, Su: 0/100
+  [OK]   Kontrollu su 150: su_max degerine sikisti  su 100, Su: 100/100
+== T4 Dolu depoda dolum engeli
+100
+  [OK]   Gercek dolumla su 100  su 100, 2014 ms
+  [OK]   Dolu depoyla giriste sayac baslamadi  sayac durdu true
+  [OK]   3 sn'de yeni ses ve efekt yok, su 100  ses 1, efekt 1, su 100
+  [OK]   Kontrollu su 99: sayac basladi  kalan 1.62 sn
+  [OK]   Kontrollu su 99: su_max ve 1 yeni ses  su 100, 2016 ms, ses 2, efekt 2
+== T5 Tekrar edilen giris-cikis islemleri
+100
+  [OK]   5 kisa giris gercekten olustu  giris 5
+  [OK]   Toplam gol suresi 2 sn'yi asti, sure birikmedi  toplam 7749 ms, su 50, ses 0, efekt 0
+  [OK]   2 sn'ye yakin cikista dolum olmadi  bu giriste 1849 ms, su 50, ses 0
+  [OK]   Yeniden giriste sayac sifirdan: 1,5 sn'de 50  su 50
+  [OK]   Tam beklemede dolum  su 100, 2016 ms
+  [OK]   Sonraki 3 sn'de tekrar yok: ses ve efekt 1  ses 1, efekt 1, bitis 1
+== T6 Menuye donme ve yeniden baslatma
+100
+150
+  [OK]   Tur 1: degisen durum (puan 150, su 100)  Puan: 150, su 100, ses 1
+  [OK]   Tur 1: Esc ile menu  AnaMenu
+100
+  [OK]   Tur 1: yeni oyunda degerler sifirlandi  su 50, Puan: 100, konum (576.0, 324.0), ses 0, efekt 0
+100
+150
+  [OK]   Tur 2: degisen durum (puan 150, su 100)  Puan: 150, su 100, ses 1
+  [OK]   Tur 2: Esc ile menu  AnaMenu
+100
+  [OK]   Tur 2: yeni oyunda degerler sifirlandi  su 50, Puan: 100, konum (576.0, 324.0), ses 0, efekt 0
+100
+  [OK]   Dolum sirasinda Esc: menu, ses yok  AnaMenu, ses 0
+100
+  [OK]   Sonra Basla: su 50  su 50
+100
+  [OK]   Esc oncesi ses ve efekt calisiyor  ses true, efekt true
+  [OK]   Ses calarken Esc: menu, oynatici sahneyle kalkti  AnaMenu, oynatici gecerli false
+100
+  [OK]   Sonra Basla: ses ve efekt yok, su 50  ses 0, efekt 0, su 50
+== SONUC: 48 basarili, 0 hatali

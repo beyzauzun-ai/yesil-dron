@@ -1,0 +1,45 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.14761 Core Profile Forward-Compatible Context 21.30.44.10 30.0.13044.10001 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Vega 8 Graphics
+
+== Dugum ayarlari
+100
+  [OK]   DolumSesi Oyun altinda  
+  [OK]   kaynak bubble_short.wav  res://assets/audio/bubble_short.wav
+  [OK]   autoplay kapali  
+  [OK]   dongu kapali  0
+  [OK]   volume_db 0  0.0
+  [OK]   efekt hala damla.svg  res://assets/ui/damla.svg
+== Oyun baslangici: dokunmadan 3 sn
+  [OK]   ses calmadi  0
+== Basarili dolum
+  [OK]   2 sn dolmadan ses yok  0
+  [OK]   dolumla birlikte basladi  fark 0 ms
+  [OK]   efekt de 1 kez basladi  
+  [OK]   bir kez calip bitti  calma 1 bitis 1
+  [OK]   efekt bitti  
+  [OK]   golde beklerken tekrar calmadi  1
+== Depo doluyken giris
+  [OK]   sayac baslamadi  
+  [OK]   ses calmadi  1
+== Su azaltilip yeniden dolum
+  [OK]   yeni dolumda basladi  2
+  [OK]   yeniden bir kez calip bitti  calma 2 bitis 2 su 100
+== Erken cikis
+100
+  [OK]   cikista sayac durdu  
+  [OK]   ses calmadi, su 50  calma 0 su 50
+== Art arda giris-cikis
+100
+  [OK]   toplam > 2 sn ama ses yok  calma 0 su 50
+== Esc: bosta
+100
+  [OK]   Esc -> AnaMenu  
+  [OK]   menude ses yok  
+== Esc: ses calarken
+100
+  [OK]   ses caliyor  
+  [OK]   Esc -> AnaMenu  
+  [OK]   oynatici sahneyle kalkti  
+100
+  [OK]   Basla -> Oyun, ses yok, su 50  
+== SONUC: 26 basarili, 0 hatali

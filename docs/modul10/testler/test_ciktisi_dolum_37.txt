@@ -1,0 +1,61 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.14761 Core Profile Forward-Compatible Context 21.30.44.10 30.0.13044.10001 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Vega 8 Graphics
+
+== Baslangic: dokunmadan 3 sn
+100
+  [OK]   su 50 kaldi  50
+  [OK]   zamanlayici calismiyor  
+  [OK]   efekt yok  
+== Basarili dolum
+  [OK]   gole girince sayac basladi  
+  [OK]   2 sn dolmadan su degismedi  50
+  [OK]   yaklasik 2 sn'de doldu  2018 ms
+  [OK]   etiket ve cubuk 100  
+  [OK]   efekt 1 kez gorundu, tam belirgin  a=1.00
+  [OK]   damla yukari hareket ediyor  y=-117.5
+  [OK]   efekt sonra gizlendi  
+  [OK]   efekt yaklasik 0.8 sn  780 ms
+== Dolu depoyla giris
+  [OK]   sayac baslamadi  
+  [OK]   su 100, yeni efekt yok  
+== Erken cikis
+100
+  [OK]   sayac basladi  
+  [OK]   cikista sayac durdu  
+  [OK]   su 50, efekt yok  50
+== Art arda giris-cikis (sure birikmez)
+100
+  [OK]   toplam > 2 sn ama su 50, efekt yok  50
+== Yeniden giriste sifirdan
+  [OK]   1.5 sn'de hala 50  
+  [OK]   tam suresinde doldu  2017 ms
+  [OK]   efekt 1 kez  
+== Depo azalinca yeniden dolum
+  [OK]   su 30 -> 100, ikinci efekt  100
+== Ada ve gol ic siniri
+100
+  [OK]   yarilar arasi geciste sayac surdu  (719.999, 430.0)
+  [OK]   gecis sonrasi doldu  
+== Hareket, sinirlar, puan, Esc
+100
+  [OK]   ui_right yon ve hiz  201 px/sn
+  [OK]   ui_left yon ve hiz  200 px/sn
+  [OK]   ui_up yon ve hiz  200 px/sn
+  [OK]   ui_down yon ve hiz  200 px/sn
+  [OK]   ui_up siniri  (576.0, 144.8)
+  [OK]   ui_down siniri  (576.0, 571.2)
+  [OK]   ui_left siniri  (115.2, 324.0)
+  [OK]   ui_right siniri  (1036.8, 324.0)
+  [OK]   baslangic puani  
+150
+  [OK]   puan 150  
+  [OK]   diger gostergeler  
+== Esc: dolum ve efekt sirasinda
+100
+  [OK]   efekt calisiyor  
+  [OK]   Esc -> AnaMenu  
+100
+  [OK]   Basla -> Oyun, su 50  
+== Ekran goruntuleri (zaman olcumu disinda)
+100
+== SONUC: 37 basarili, 0 hatali

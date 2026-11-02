@@ -1,0 +1,56 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/oyun.gd" id="1_oyun"]
+[ext_resource type="PackedScene" uid="uid://b6le6lfa1u20h" path="res://scenes/dron.tscn" id="2_dron"]
+[ext_resource type="PackedScene" path="res://scenes/hud.tscn" id="3_hud"]
+[ext_resource type="Texture2D" path="res://assets/backgrounds/yesil_dron_orman_haritasi_v2.png" id="4_harita"]
+[ext_resource type="Texture2D" path="res://assets/ui/damla.svg" id="5_damla"]
+[ext_resource type="AudioStream" uid="uid://cqvymm5p2lf63" path="res://assets/audio/bubble_short.wav" id="6_dolum_sesi"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_sensor"]
+radius = 12.0
+
+[node name="Oyun" type="Node2D"]
+script = ExtResource("1_oyun")
+
+[node name="Harita" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_harita")
+
+[node name="Gol" type="Area2D" parent="."]
+
+[node name="GolBati" type="CollisionPolygon2D" parent="Gol"]
+polygon = PackedVector2Array(620, 215, 620, 270, 595, 285, 557, 305, 540, 340, 555, 365, 620, 391, 620, 506, 590, 505, 555, 485, 505, 465, 430, 435, 395, 405, 385, 380, 395, 357, 415, 320, 455, 305, 490, 280, 505, 250, 535, 245, 550, 220)
+
+[node name="GolDogu" type="CollisionPolygon2D" parent="Gol"]
+polygon = PackedVector2Array(620, 215, 640, 202, 665, 205, 705, 215, 725, 245, 790, 255, 820, 287, 845, 310, 855, 360, 880, 385, 880, 405, 860, 435, 815, 465, 805, 490, 795, 505, 700, 510, 620, 506, 620, 391, 675, 382, 680, 335, 655, 295, 620, 270)
+
+[node name="DolumZamanlayici" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[node name="DolumSesi" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_dolum_sesi")
+
+[node name="Dron" parent="." instance=ExtResource("2_dron")]
+ust_bosluk = 68.0
+
+[node name="SuSensoru" type="Area2D" parent="Dron"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dron/SuSensoru"]
+shape = SubResource("CircleShape2D_sensor")
+
+[node name="DamlaEfekti" type="Sprite2D" parent="Dron"]
+visible = false
+position = Vector2(0, -100)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("5_damla")
+
+[node name="BeyazKenar" type="Sprite2D" parent="Dron/DamlaEfekti"]
+modulate = Color(8, 8, 8, 1)
+show_behind_parent = true
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("5_damla")
+
+[node name="HUD" parent="." instance=ExtResource("3_hud")]

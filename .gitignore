@@ -1,0 +1,27 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Dışa aktarım çıktıları
+/export/
+/build/
+
+# Geçici dosyalar
+*.tmp
+*.temp
+*.log
+*.bak
+*.orig
+*~
+
+# Yedekler ve paketler
+*_yedek*
+*.zip
+
+# Test çalıştırmalarının ürettiği görüntüler
+docs/modul8/testler/t_*.png
+
+# İşletim sistemi dosyaları
+Thumbs.db
+desktop.ini
+.DS_Store

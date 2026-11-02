@@ -1,0 +1,226 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/hud.gd" id="1_hud"]
+[ext_resource type="Texture2D" path="res://assets/ui/yildiz.svg" id="2_yildiz"]
+[ext_resource type="Texture2D" uid="uid://cv03vjnbx8e80" path="res://assets/sprites/damla_modul8_temiz.png" id="3_damla"]
+[ext_resource type="Texture2D" path="res://assets/ui/ates.svg" id="4_ates"]
+[ext_resource type="Texture2D" path="res://assets/ui/fidan.svg" id="5_fidan"]
+[ext_resource type="Texture2D" path="res://assets/ui/saat.svg" id="6_saat"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ust"]
+bg_color = Color(0.055, 0.231, 0.263, 0.8)
+border_width_bottom = 2
+border_color = Color(0.494, 0.851, 0.341, 0.6)
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bar_arka"]
+bg_color = Color(0, 0, 0, 0.35)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_Su_dolu"]
+bg_color = Color(0.31, 0.765, 0.969, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_Sondurulen_dolu"]
+bg_color = Color(1, 0.6, 0.2, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_Fidan_dolu"]
+bg_color = Color(0.494, 0.851, 0.341, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_hud")
+
+[node name="UstCubuk" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ust")
+
+[node name="MarginContainer" type="MarginContainer" parent="UstCubuk"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 12
+
+[node name="Gostergeler" type="HBoxContainer" parent="UstCubuk/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="PuanKutusu" type="VBoxContainer" parent="UstCubuk/MarginContainer/Gostergeler"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 6
+alignment = 1
+
+[node name="PuanSatiri" type="HBoxContainer" parent="UstCubuk/MarginContainer/Gostergeler/PuanKutusu"]
+layout_mode = 2
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="PuanSimge" type="TextureRect" parent="UstCubuk/MarginContainer/Gostergeler/PuanKutusu/PuanSatiri"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("2_yildiz")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="PuanLabel" type="Label" parent="UstCubuk/MarginContainer/Gostergeler/PuanKutusu/PuanSatiri"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.902, 0.502, 1)
+theme_override_colors/font_outline_color = Color(0.02, 0.1, 0.1, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 20
+text = "Puan: 0"
+
+[node name="SuKutusu" type="VBoxContainer" parent="UstCubuk/MarginContainer/Gostergeler"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 6
+
+[node name="SuSatiri" type="HBoxContainer" parent="UstCubuk/MarginContainer/Gostergeler/SuKutusu"]
+layout_mode = 2
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="SuSimge" type="TextureRect" parent="UstCubuk/MarginContainer/Gostergeler/SuKutusu/SuSatiri"]
+texture_filter = 4
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("3_damla")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SuLabel" type="Label" parent="UstCubuk/MarginContainer/Gostergeler/SuKutusu/SuSatiri"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.31, 0.765, 0.969, 1)
+theme_override_colors/font_outline_color = Color(0.02, 0.1, 0.1, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 20
+text = "Su: 0/0"
+
+[node name="SuBar" type="ProgressBar" parent="UstCubuk/MarginContainer/Gostergeler/SuKutusu"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_bar_arka")
+theme_override_styles/fill = SubResource("StyleBoxFlat_Su_dolu")
+show_percentage = false
+
+[node name="SondurulenKutusu" type="VBoxContainer" parent="UstCubuk/MarginContainer/Gostergeler"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 6
+
+[node name="SondurulenSatiri" type="HBoxContainer" parent="UstCubuk/MarginContainer/Gostergeler/SondurulenKutusu"]
+layout_mode = 2
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="SondurulenSimge" type="TextureRect" parent="UstCubuk/MarginContainer/Gostergeler/SondurulenKutusu/SondurulenSatiri"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("4_ates")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SondurulenLabel" type="Label" parent="UstCubuk/MarginContainer/Gostergeler/SondurulenKutusu/SondurulenSatiri"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.6, 0.2, 1)
+theme_override_colors/font_outline_color = Color(0.02, 0.1, 0.1, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 20
+text = "Söndürülen: 0/0"
+
+[node name="SondurulenBar" type="ProgressBar" parent="UstCubuk/MarginContainer/Gostergeler/SondurulenKutusu"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_bar_arka")
+theme_override_styles/fill = SubResource("StyleBoxFlat_Sondurulen_dolu")
+show_percentage = false
+
+[node name="FidanKutusu" type="VBoxContainer" parent="UstCubuk/MarginContainer/Gostergeler"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 6
+
+[node name="FidanSatiri" type="HBoxContainer" parent="UstCubuk/MarginContainer/Gostergeler/FidanKutusu"]
+layout_mode = 2
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="FidanSimge" type="TextureRect" parent="UstCubuk/MarginContainer/Gostergeler/FidanKutusu/FidanSatiri"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("5_fidan")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="FidanLabel" type="Label" parent="UstCubuk/MarginContainer/Gostergeler/FidanKutusu/FidanSatiri"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.494, 0.851, 0.341, 1)
+theme_override_colors/font_outline_color = Color(0.02, 0.1, 0.1, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 20
+text = "Fidan: 0/0"
+
+[node name="FidanBar" type="ProgressBar" parent="UstCubuk/MarginContainer/Gostergeler/FidanKutusu"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_bar_arka")
+theme_override_styles/fill = SubResource("StyleBoxFlat_Fidan_dolu")
+show_percentage = false
+
+[node name="SureKutusu" type="VBoxContainer" parent="UstCubuk/MarginContainer/Gostergeler"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 6
+alignment = 1
+
+[node name="SureSatiri" type="HBoxContainer" parent="UstCubuk/MarginContainer/Gostergeler/SureKutusu"]
+layout_mode = 2
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="SureSimge" type="TextureRect" parent="UstCubuk/MarginContainer/Gostergeler/SureKutusu/SureSatiri"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("6_saat")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SureLabel" type="Label" parent="UstCubuk/MarginContainer/Gostergeler/SureKutusu/SureSatiri"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.02, 0.1, 0.1, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 20
+text = "Kalan süre: 0 sn"
