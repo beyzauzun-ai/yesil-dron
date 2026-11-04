@@ -23,7 +23,7 @@ Bu belge hukuki görüş değildir ve varlıkların yayımlanabilirliği konusun
 Bunların dışında:
 
 - `assets/audio/bubble_short.wav` kendi **CC0** kaydına tabidir; bu kayıt yükleyicinin beyanına dayanır.
-- Eski `icon.svg` Godot kaynaklıdır (varsayılan proje simgesi) ve MIT kapsamında değildir.
+- Eski `icon.svg` Godot kaynaklıdır (varsayılan proje simgesi); Godot logosunu gösterir. Godot logosu CC BY 4.0 lisanslıdır; bu dosyanın aynı lisans kapsamında olduğu doğrudan doğrulanamadı. Dosya MIT kapsamında değildir. Atıf ve ayrıntı, varlık tablosunun altındadır.
 
 Ayrı bir lisans belirtilmedikçe, MIT kapsamı dışındaki varlıklar için bu depoda açık bir yeniden kullanım izni verilmemektedir. Bu belge, bu varlıkların hak sahipliği konusunda kesinlik iddia etmez.
 
@@ -38,9 +38,11 @@ Ayrı bir lisans belirtilmedikçe, MIT kapsamı dışındaki varlıklar için bu
 | `assets/ui/yildiz.svg`, `ates.svg`, `fidan.svg`, `saat.svg` | HUD ikonları | Claude Code yazdı | Yok | Lisans beyanı yok; Doğrulanamadı | Oturum kaydı |
 | `assets/ui/damla.svg` | Dolum anındaki damla efekti | Claude Code yazdı | Yok | Lisans beyanı yok; Doğrulanamadı | Oturum kaydı |
 | `assets/icons/yesil_dron_icon_256.png` | Proje simgesi | **ChatGPT ile üretildi — kullanıcı beyanı; dosyada üretim kaydı yok, özgün üretim komutu doğrulanamadı.** Tasarımı Beyza Uzun onayladı | Değişiklik yapılmadı; köşeleri opak ve siyahtır | **Bu görsel MIT Lisansı kapsamına girmez.** Dosyaya özel lisans belgesi yok; Doğrulanamadı | Kullanıcı beyanı |
-| `icon.svg` | Artık kullanılmıyor; depoda korunuyor | Godot'un varsayılan proje simgesi (`editor/icons/DefaultProjectIcon.svg`) ile birebir aynı | Değiştirilmedi | Godot basın sayfasına göre logolar CC BY 4.0; MIT kapsamında değil | Godot deposuyla karşılaştırma; https://godotengine.org/press/ |
+| `icon.svg` | Aktif proje simgesi değildir (aktif simge: `assets/icons/yesil_dron_icon_256.png`); depoda korunuyor | Godot'un varsayılan proje simgesi (`editor/icons/DefaultProjectIcon.svg`) ile birebir aynı; Godot logosunu gösterir | Değiştirilmedi | Godot logosu CC BY 4.0 (eser sahibi Andrea Calabró); bu dosyanın aynı kapsamda olduğu doğrudan doğrulanamadı. MIT kapsamında değil | Godot deposuyla karşılaştırma; Godot deposundaki `misc/logo/LICENSE.txt`; https://godotengine.org/press/ |
 | `docs/images/*.jpg` | README görselleri | Godot'ta çalışan oyundan alınan kareler; yukarıdaki varlıkları içerir | JPEG'e çevrildi | İçerdiği varlıklara bağlı | Oturum kaydı |
 | Varsayılan yazı tipi | Arayüz | Godot ile gelir; depoda dosya yok | Yok | Adı ve lisansı Doğrulanamadı | Proje dosyaları |
+
+**`icon.svg` atfı ve lisans durumu:** Dosya Godot logosunu gösterir. Logo atfı: Godot Engine Logo, Copyright (c) 2017 Andrea Calabró, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) (kaynak: Godot deposundaki `misc/logo/LICENSE.txt`). Godot'un `COPYRIGHT.txt` dosyası bu lisansı `misc/logo/*` dosyaları için belirtir; `icon.svg` ile birebir aynı olan `editor/icons/DefaultProjectIcon.svg` orada ayrıca anılmaz. Bu nedenle `icon.svg` dosyasının kendisinin CC BY 4.0 kapsamında olduğu doğrudan doğrulanamadı. Dosya değiştirilmemiştir ve aktif proje simgesi değildir.
 
 ## Harita v2 görselinin kaynağı
 
@@ -85,8 +87,10 @@ This document is not legal advice and does not guarantee that the assets may be 
 | Fill sound | "Bubble Short.wav" by murraysortz, [Freesound](https://freesound.org/people/murraysortz/sounds/192492/) | CC0, as declared by the uploader |
 | SVG icons | Written by Claude Code (session record) | No license statement; not verified |
 | Project icon (`yesil_dron_icon_256.png`) | Generated with ChatGPT (user statement); no generation record in the file, original prompt not verified; design approved by Beyza Uzun | Not verified; not covered by the MIT License |
-| `icon.svg` (no longer used, kept in the repository) | From Godot; identical to Godot's default project icon | Godot logos: CC BY 4.0 according to Godot's press page; not covered by the MIT License |
+| `icon.svg` (not the active project icon, which is `assets/icons/yesil_dron_icon_256.png`; kept in the repository) | From Godot; identical to Godot's default project icon and shows the Godot logo; not modified | The Godot logo is CC BY 4.0 (by Andrea Calabró); whether this file itself is under the same license could not be directly verified. Not covered by the MIT License |
 | Default font | Not verified | Not verified |
+
+**`icon.svg` attribution and license status:** The file shows the Godot logo. Logo attribution: Godot Engine Logo, Copyright (c) 2017 Andrea Calabró, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) (source: `misc/logo/LICENSE.txt` in the Godot repository). Godot's `COPYRIGHT.txt` states this license for the `misc/logo/*` files; `editor/icons/DefaultProjectIcon.svg`, which is identical to `icon.svg`, is not listed there separately. Therefore it could not be directly verified that `icon.svg` itself is covered by CC BY 4.0. The file has not been modified and is not the active project icon.
 
 According to the user, OpenAI's terms state that rights in output belong to the user to the extent permitted by applicable law. This is not a guarantee regarding third-party rights.
 
