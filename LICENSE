@@ -10,8 +10,8 @@ Aşağıdaki MIT Lisansı YALNIZCA bu depodaki şu dosyalar için geçerlidir:
   .editorconfig, docs/images/.gdignore ve bu depoda mevcut olan teknik
   .gd.uid ve .import dosyaları
 
-Aşağıdakiler bu lisansın KAPSAMINDA DEĞİLDİR: görseller, sesler, SVG dosyaları
-(icon.svg dahil), ekran görüntüleri, README.md, ASSETS.md ve diğer belgeler,
+Aşağıdakiler bu lisansın KAPSAMINDA DEĞİLDİR: görseller, sesler, SVG dosyaları,
+ekran görüntüleri, README.md, ASSETS.md ve diğer belgeler,
 test çıktıları. Bunların kaynak ve lisans bilgileri için ASSETS.md dosyasına
 bakınız. Bir sahne, .gd.uid veya .import dosyasının bir varlığa başvurması ya
 da bir varlıkla ilişkili olması, o varlığa bu lisansı uygulamaz.
@@ -27,8 +27,8 @@ The MIT License below applies ONLY to the following files in this repository:
   .editorconfig, docs/images/.gdignore and the technical .gd.uid and .import
   files present in this repository
 
-The following are NOT covered by this license: images, audio, SVG files
-(including icon.svg), screenshots, README.md, ASSETS.md and other documents,
+The following are NOT covered by this license: images, audio, SVG files,
+screenshots, README.md, ASSETS.md and other documents,
 test outputs. See ASSETS.md for their sources and license information. A scene,
 .gd.uid or .import file referring to or being associated with an asset does not
 apply this license to that asset.
