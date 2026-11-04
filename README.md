@@ -6,7 +6,7 @@
 
 Ormanı korumak için su taşıyan bir dronun yönetildiği, Godot ile geliştirilen 2D oyun prototipi.
 
-*GameUp Türkiye Yapay Zekâyla Oyun Geliştirme İleri Düzey Eğitimi kapsamında geliştirilmiştir.*
+*Bu proje, GameUp Türkiye Yapay Zekâyla Oyun Geliştirme İleri Düzey Eğitimi sürecinde bireysel olarak geliştirilmiş bir oyun prototipidir. GameUp Türkiye'nin resmî bir ürünü veya kurum tarafından onaylanmış bir çalışma değildir. Eğitim materyalleri bu depoda paylaşılmamaktadır.*
 
 ![Dolum sonrasında damla efekti](docs/images/dolum_sonrasi_damla_efekti.jpg)
 
@@ -125,7 +125,7 @@ Beyza Uzun
 
 A 2D game prototype built with Godot, in which you pilot a drone that carries water to protect a forest.
 
-*Developed as part of the GameUp Türkiye Advanced Game Development with AI training program.*
+*This is an independent game prototype developed during the 'GameUp Türkiye Yapay Zekâyla Oyun Geliştirme İleri Düzey Eğitimi' training program. It is not an official GameUp Türkiye product or an endorsed project. Course materials are not included in this repository.*
 
 ## About
 
